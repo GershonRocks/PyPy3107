@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'python hello.py'
+                git 'https://github.com/LiorRocks/PyPy3107.git'
+                sh 'hello.py'
             }
         }
     }
