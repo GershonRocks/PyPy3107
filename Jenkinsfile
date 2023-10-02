@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'hello.py'
+                sh '''#!/bin/bash
+                cd PyPy3107
+                python3 hello.py'''
             }
         }
     }
